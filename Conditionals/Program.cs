@@ -55,6 +55,7 @@ namespace Conditionals
                 Console.WriteLine("Sayı Sıfırdır.");
             }
             Console.ReadLine();
+            Console.WriteLine("LOL");
     }
 
 
