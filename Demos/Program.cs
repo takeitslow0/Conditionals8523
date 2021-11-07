@@ -20,31 +20,43 @@ namespace Demos
             string egitim = Console.ReadLine();
             Console.Write("Renk körü müsün? (Evet: e, Hayır: h)");
             string renkKoruMu = Console.ReadLine();
-            if (yas >=18)
+            //if (yas >=18)
+            //{
+            //    if (egitim == "l" || egitim == "ü")
+            //    {
+
+
+            //        if (renkKoruMu == "h")
+            //        {
+            //            Console.WriteLine("Sayın " + ad + ", ehliyet alabilirsiniz.");
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Sayın " + ad + ", ehliyet alamazsınız. Çünkü Renk körü hastalığınız vardır.");
+            //        }
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Sayın " + ad + ", ehliyet alamazsınız. Çünkü eğitim durumunuz kriterleri karşılamıyor");
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Sayın " + ad + ", ehliyet alamazsınız. Çünkü yaşınız 18den küçük." );
+
+            //}
+            if (yas >= 18 && (egitim == "l" || egitim == "ü") && renkKoruMu == "h")
+
             {
-                if (egitim == "l" || egitim == "ü")
-                {
-                    
-                   
-                    if (renkKoruMu == "h")
-                    {
-                        Console.WriteLine("Sayın " + ad + ", ehliyet alabilirsiniz.");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Sayın " + ad + ", ehliyet alamazsınız. Çünkü Renk körü hastalığınız vardır.");
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Sayın " + ad + ", ehliyet alamazsınız. Çünkü eğitim durumunuz kriterleri karşılamıyor");
-                }
+                Console.WriteLine("Sayın " + ad + ", ehliyet alabilirsiniz.");
             }
-            else
+            else //(yas < 18 || (egitim != "l" && egitim != "ü") || renkKoruMu != "h")
             {
-                Console.WriteLine("Sayın " + ad + ", ehliyet alamazsınız. Çünkü yaşınız 18den küçük." );
-                
+                Console.WriteLine("Sayın " + ad + "Ehliyet alamazsınız.");
             }
+
+            
+            
             Console.ReadLine();
 
 
