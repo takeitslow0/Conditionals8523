@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conditionals", "Conditional
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demos", "Demos\Demos.csproj", "{10433F63-F600-4BBD-9111-37F68281A4CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demos2", "Demos2\Demos2.csproj", "{39D64C9D-AF6C-4645-9297-52385BE8B376}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLDovizHesaplama", "TLDovizHesaplama\TLDovizHesaplama.csproj", "{CBCFD2CA-0DB3-4D6F-A26C-08FC77EFA698}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{10433F63-F600-4BBD-9111-37F68281A4CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10433F63-F600-4BBD-9111-37F68281A4CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10433F63-F600-4BBD-9111-37F68281A4CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39D64C9D-AF6C-4645-9297-52385BE8B376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39D64C9D-AF6C-4645-9297-52385BE8B376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39D64C9D-AF6C-4645-9297-52385BE8B376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39D64C9D-AF6C-4645-9297-52385BE8B376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBCFD2CA-0DB3-4D6F-A26C-08FC77EFA698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCFD2CA-0DB3-4D6F-A26C-08FC77EFA698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBCFD2CA-0DB3-4D6F-A26C-08FC77EFA698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBCFD2CA-0DB3-4D6F-A26C-08FC77EFA698}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
