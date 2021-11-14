@@ -11,7 +11,7 @@ namespace BMI
         static void Main(string[] args)
         {
             BaslikYaz();
-            double boy = Giris("Boy (cm): ");
+            double boy = Giris("Boy (Ör: '1,80'): ");
             double kilo = Giris("Kilo (kg): ");
             double bmi = EndeksHesapla(boy, kilo);
             Console.WriteLine($"Endeks: {bmi}");
