@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops8523", "Loops8523\Loop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsalSayiDemo", "AsalSayiDemo\AsalSayiDemo.csproj", "{090143C0-E4EC-4525-B7C6-BEE7987AF796}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulakatDemo", "MulakatDemo\MulakatDemo.csproj", "{512F440E-FF48-4609-B663-5624EA9D0A11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{090143C0-E4EC-4525-B7C6-BEE7987AF796}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{090143C0-E4EC-4525-B7C6-BEE7987AF796}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{090143C0-E4EC-4525-B7C6-BEE7987AF796}.Release|Any CPU.Build.0 = Release|Any CPU
+		{512F440E-FF48-4609-B663-5624EA9D0A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{512F440E-FF48-4609-B663-5624EA9D0A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{512F440E-FF48-4609-B663-5624EA9D0A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{512F440E-FF48-4609-B663-5624EA9D0A11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
