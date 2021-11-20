@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMI", "BMI\BMI.csproj", "{2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops8523", "Loops8523\Loops8523.csproj", "{C4FE3F2B-FFBA-417B-A358-F302073BA91F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsalSayiDemo", "AsalSayiDemo\AsalSayiDemo.csproj", "{090143C0-E4EC-4525-B7C6-BEE7987AF796}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{C4FE3F2B-FFBA-417B-A358-F302073BA91F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4FE3F2B-FFBA-417B-A358-F302073BA91F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4FE3F2B-FFBA-417B-A358-F302073BA91F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{090143C0-E4EC-4525-B7C6-BEE7987AF796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{090143C0-E4EC-4525-B7C6-BEE7987AF796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{090143C0-E4EC-4525-B7C6-BEE7987AF796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{090143C0-E4EC-4525-B7C6-BEE7987AF796}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
