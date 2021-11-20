@@ -102,6 +102,19 @@ namespace Loops8523
 
             } while (x < students.Length);
 
+            int no = 1;
+            Console.WriteLine(no++); // 1
+            Console.WriteLine(no); // 2
+
+            int n1 = 10, n2 = 5;
+            n1 += n2; // n1 = 15
+
+            string ad = "Çağıl";
+            string bosluk = " ";
+            string soyad = "Alsaç";
+            ad = ad + bosluk + soyad;
+            ad += bosluk + soyad;
+            Console.WriteLine(ad);
 
 
             Console.ReadLine();
