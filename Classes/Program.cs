@@ -29,6 +29,16 @@ namespace Classes
 
             ProductService productService = new ProductService();
             productService.List();
+            
+            Customer customer1 = new Customer();
+            customer1.Setname("Yağız");
+            customer1.Setsurname("Yılmaz");
+            Console.WriteLine(customer1.GetName() + " " + customer1.GetSurname());
+
+            customer1.CreditCardNo = "1234 5678 9012 3456";
+            customer1.ErkekMi = true;
+            Console.WriteLine(customer1.CreditCardNo + " - " + customer1.Cinsiyet);
+            Console.WriteLine(customer1.TitleNameSurname);
 
             Console.ReadLine();
         }
