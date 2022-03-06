@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Basic JavaScript</title>
+    <script>
+        var isim = "Melik Baykal"; /*var yerine let de kullanılabilir*/
+        //alert(isim);
+        console.log(isim);
+            topla(10, 7);
+        carp(10, 7);
+
+        function topla(no1, no2) { //function = method..
+            console.log("Toplam: " + no1 + no2);
+        }
+        function carp(no1, no2) {
+            return no1 * no2
+        }
+    </script>
+    <script>
+        var sayi1 = 1;
+        var sayi2 = 2;
+
+        var sonuc = hangisiBuyuk(1, 1);
+        if (sonuc == null) {
+            console.log("iki sayı birbirine eşit.");
+        }
+        else {
+            console.log(sonuc + " daha büyük.");
+        }
+        function hangisiBuyuk(n1, n2) {
+            if (n1 !== n2) {
+                return n1;
+            }
+            else if (n2 > n1) {
+                return n2;
+            }
+            else {
+                return null;
+            }
+        }
+
+
+
+    </script>
+
+
+    <body onload="saat()"
+
+        <h2>Saat</h2>
+
+        <div id="txt"></div>
+        <script>
+
+
+            function saat() {
+                const today = new Date();
+                let s = today.getHours();
+                let d = today.getMinutes();
+                let sa = today.getSeconds();
+                s = checkTime(s);
+                sa = checkTime(sa);
+                document.getElementById('txt').innerHTML = s + ":" + d + ":" + sa;
+                setTimeout(saat, 1000);
+            }
+            function checkTime(i) {
+                if (i < 10) { i = "0" + i };
+                return i;
+            }
+
+        </script>
+        <script src="04_BasicJavaScript.js"></script>
+
+    </body>
+    <script>
+        ucgenDoldur();
+    </script>
+
+</head>
+<body onload="onLoadIleDoldur();">
+
+    <textarea id="mytextareaid" rows="10" cold="50"></textarea>
+    <hr />
+    <button onclick="onClickDoldur();">Üçgen Doldur</button>
+</body>
+</html>
