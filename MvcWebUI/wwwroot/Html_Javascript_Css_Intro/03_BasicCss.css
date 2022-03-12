@@ -1,88 +1,78 @@
 ﻿/*External CSS*/
 
 body {
-    background-color: pink;
+    background-color:pink;
 }
 
-.mylabelclass {
-    color: rebeccapurple;
+.mylabelclass{
+    color:rebeccapurple;
 }
 
-.yagizabiyeulas {
+.yagizabiyeulas{
+    color:black;
+    background-color:aquamarine;
+    font-weight:700;
+    border:none;
+    cursor:pointer;
+}
+
+.yagizabiyeulas:hover {
     color: black;
     background-color: aquamarine;
-    font-weight: 700;
-    border: none;
-    cursor: pointer;
+    width:200px;
 }
 
-    .yagizabiyeulas:hover {
-        color: black;
-        background-color: aquamarine;
-        width: 200px;
-    }
-
-input.myinputclass {
+input.myinputclass{
     /*width:1000px;*/
-    width: 95%;
-    border-radius: 7px;
+    width:95%;
+    border-radius:7px;
 }
 
-#mydivid {
-    background-image: url('./02_Html/WhatsApp Image 2022-03-06 at 16.49.25_480x640.jpg') background-repeat:no-repeat;
-    height: 4800px;
-    width: 6400px;
-    background-position: center;
-    border-width: 1px;
-    border-style: solid;
-    border-color: goldenrod;
-    padding-top: 30px;
-    text-align: right;
+#mydivid{
+    background-image:url('./02_Html/WhatsApp Image 2022-03-06 at 16.49.28.jpeg');
+    height:2000px;
+    width:2000px;
+    background-repeat:no-repeat;
+    //background-position:center;
+    border-width:1px;
+    border-style:solid;
+    border-color:gold;
+    padding-top:30px;
+    text-align:right;
 }
 
 .Resim {
-    height: 480px;
-    width: 640px;
+    width: 500px;
+    height: 450px;
 }
 
-.benvemelik {
-    font-size: x-large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: indigo;
+.benveyagizabi{
+    margin-left:40px;
+    font-weight:700;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-block:groove;
-    
-    
+    border-block-color:red;
 }
-.myaclass{
-    font-size:xx-large;
-    font-family:Arial, Helvetica, sans-serif;
-    border-block:medium;
-    color:hotpink;
-}
-.myaclass:visited{
-    color:firebrick !important;
-    text-decoration-color:red;
 
+.myaclass {
+    
 }
+
     .myaclass:hover {
+        color: red;
         text-decoration: none;
-        color: black !important;
-        background-color: lightgreen;
-        cursor: all-scroll;
-        bottom: inherit;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Comic Sans MS' !important;
+        font-size: 18px;
     }
-    .myaclass:link {
-        background-color: blue;
-        
-    }
-    .myaclass:link, .myaclass:visited {
-        background-color: #f44336;
-        color: white;
-        padding: 14px 25px;
-        text-align: center;
-        text-decoration: none;
-        display:list-item;
-        bottom:inherit;
-        
-    }
+
+.myaclass:visited{
+    text-decoration:none;
+    font-family:'Comic Sans MS';
+    color:green;
+}
+
+.myaclass:link{
+    text-decoration:none;
+    color:blue;
+    font-size:15px;
+}

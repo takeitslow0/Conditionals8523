@@ -2,21 +2,26 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Basic JavaScript</title>
-    <script>
-        var isim = "Melik Baykal"; /*var yerine let de kullanılabilir*/
+    <title>Basic Javascript</title>
+    <script type="text/javascript">
+        var isim = "Melik Baykal"; /*var yerine let'de kullanılabilir*/
         //alert(isim);
         console.log(isim);
-            topla(10, 7);
-        carp(10, 7);
 
-        function topla(no1, no2) { //function = method..
-            console.log("Toplam: " + no1 + no2);
+        topla(10, 7);
+
+        var carpim = carp(5, 6);
+        console.log(carpim);
+
+        function topla(no1, no2) { //function = method
+            console.log("Toplam: " + (no1 + no2));
         }
+
         function carp(no1, no2) {
-            return no1 * no2
+            return no1 * no2;
         }
     </script>
+
     <script>
         var sayi1 = 1;
         var sayi2 = 2;
@@ -28,59 +33,101 @@
         else {
             console.log(sonuc + " daha büyük.");
         }
+
         function hangisiBuyuk(n1, n2) {
-            if (n1 !== n2) {
-                return n1;
+            if (n1 !== n2) { // if(n1 !== n2)
+                if (n1 > n2) {
+                    return n1;
+                }
+                else if (n2 > n1) {
+                    return n2;
+                }
             }
-            else if (n2 > n1) {
-                return n2;
-            }
-            else {
+            else { // if(n == n2), if(n1 === n2)
                 return null;
             }
         }
-
-
-
     </script>
-
-
-    <body onload="saat()"
-
-        <h2>Saat</h2>
-
-        <div id="txt"></div>
-        <script>
-
-
-            function saat() {
-                const today = new Date();
-                let s = today.getHours();
-                let d = today.getMinutes();
-                let sa = today.getSeconds();
-                s = checkTime(s);
-                sa = checkTime(sa);
-                document.getElementById('txt').innerHTML = s + ":" + d + ":" + sa;
-                setTimeout(saat, 1000);
-            }
-            function checkTime(i) {
-                if (i < 10) { i = "0" + i };
-                return i;
-            }
-
-        </script>
-        <script src="04_BasicJavaScript.js"></script>
-
-    </body>
+    <script src="04_BasicJacascript.js"></script>
     <script>
         ucgenDoldur();
     </script>
-
 </head>
 <body onload="onLoadIleDoldur();">
+    <textarea id="mytextareaid" rows="10" cols="50"></textarea>
+    <br />
+    <button onclick="onClickIleDoldur();">Ucgen Doldur</button>
 
-    <textarea id="mytextareaid" rows="10" cold="50"></textarea>
+    <script src="04_Bilgisayar.js"></script>
     <hr />
-    <button onclick="onClickDoldur();">Üçgen Doldur</button>
+    <table border="1">
+        <tr>
+            <td colspan="2" style="text-align:center">
+                <h2>Bilgisayar</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Marka</b>
+            </td>
+            <td>
+                <input type="text" id="marka" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Model</b>
+            </td>
+            <td>
+                <input type="text" id="model" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>İşlemci Hızı</b>
+            </td>
+            <td>
+                <input type="text" id="hiz" />GHz
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Hafıza</b>
+            </td>
+            <td>
+                <select id="hafiza">
+                    <option value="8">8</option>
+                    <option value="16">16</option>
+                    <option value="32">32</option>
+                </select>GB
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Su Soğutma</b>
+            </td>
+            <td>
+                <input type="checkbox" id="susogutma" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Üretim Tarihi</b>
+            </td>
+            <td>
+                <input type="date" id="uretimtarihi" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center">
+                <button onclick="bilgisayarOlustur();">Bilgisayar Oluştur</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p id="bilgisayar"></p>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
