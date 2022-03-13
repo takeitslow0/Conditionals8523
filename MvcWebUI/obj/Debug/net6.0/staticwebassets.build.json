@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BOFD6yX8k0Pg8p37aLqOmfvvVVyJ1QrpOb1k3ahB7CE=",
+  "Hash": "e9UY1Fy9Fvd68iXvLZhRM/l2HW8jfHVavFSw0AlAIMo=",
   "Source": "MvcWebUI",
   "BasePath": "_content/MvcWebUI",
   "Mode": "Default",
@@ -287,6 +287,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Html_Javascript_Css_Intro\\05_jQueryVsJavaScript.html"
+    },
+    {
+      "Identity": "C:\\Users\\yagiz.yilmaz\\Source\\Repos\\038_ETicaretMelikv3\\MvcWebUI\\wwwroot\\Html_Javascript_Css_Intro\\06_BasicBootstrap.html",
+      "SourceId": "MvcWebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yagiz.yilmaz\\Source\\Repos\\038_ETicaretMelikv3\\MvcWebUI\\wwwroot\\",
+      "BasePath": "_content/MvcWebUI",
+      "RelativePath": "Html_Javascript_Css_Intro/06_BasicBootstrap.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Html_Javascript_Css_Intro\\06_BasicBootstrap.html"
     },
     {
       "Identity": "C:\\Users\\yagiz.yilmaz\\Source\\Repos\\038_ETicaretMelikv3\\MvcWebUI\\wwwroot\\Html_Javascript_Css_Intro\\BasicHtml.html",

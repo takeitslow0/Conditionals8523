@@ -6,15 +6,17 @@
     <script src="../lib/jquery/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            var duzKelime = $("#testbox").val();
-            $("#test-btn").click(function (duzKelime) {
+            
+            $("#test-btn").click(function () {
+                var duzKelime = $("#textbox").val();
                 console.log("1");
                 var tersKelime = "";
                 for (var i = duzKelime.length - 1; i >= 0; i--) {
                     tersKelime += duzKelime[i];
                 }
                 if (tersKelime == duzKelime) {
-                    $("#sonuc").text("kelime palindrom");
+                   
+                    $("#sonuc").text("Kelime Palindrom");
                 } else {
                     $("#sonuc").text("Kelime Palindrom Değil!");
                 }
@@ -24,14 +26,15 @@
 
     </script>
 </head>
-<body>
+<body style="background-color:rgb(120 13 5)">
     <h1 class="title">Palindrom</h1>
+    <hr />
     <div class="textbox-container">
-        <input id="textbox" placeholder="Bir Kelime gir" type="text" />
+        <input style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" id="textbox" placeholder="Bir Kelime gir" type="text" />
     </div>
     <div class="btn-container">
-        <button id="test-btn">Test Et</button>
+        <button style="transition-duration: 0.4s; background-color: green; color: white; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);" id="test-btn">Test Et</button>
     </div>
-    <span id="sonuc" style="text-align: center;"></span>
+    <span id="sonuc" style="text-align: center;color:whitesmoke;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"></span>
 </body>
 </html>

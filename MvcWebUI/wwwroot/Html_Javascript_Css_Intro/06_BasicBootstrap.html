@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Basic Bootstrap</title>
+    <link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <style>
+        .myjumbotron{
+            background-color: rebeccapurple !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <b>Adı</b>
+            </div>
+            <div class="col-md-4">
+                <b>Kurum</b>
+            </div>
+            <div class="col-md-4">
+                <b>Ünvan</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                Yağız Yılmaz
+            </div>
+            <div class="col-md-4">
+                Bilge Adam
+            </div>
+            <div class="col-md-4">
+                Yazılım Geliştirme Öğrencisi
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-4">
+                <b>Adı</b>
+            </div>
+            <div class="col-4">
+                <b>Kurum</b>
+            </div>
+            <div class="col-4">
+                <b>Ünvan</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                Yağız Yılmaz
+            </div>
+            <div class="col-4">
+                Bilge Adam
+            </div>
+            <div class="col-4">
+                Yazılım Geliştirme Öğrencisi
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-12">
+                <label style="font-size:larger" class="text-primary">Primary Label</label>
+                <br />
+                <button class="btn btn-info">Info Button</button>
+                <br />
+                <a href="https://sims.ist" target="_blank" class="btn btn-outline-warning">Warning Link</a>
+                <hr />
+                <span class="text-success">Succes Span</span>
+                <br />
+                <input type="button" class="btn btn-outline-danger" value="Danger Button" />
+                <hr />
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form>
+                        <div class="mb-3 mt-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                        </div>
+                        <div class="form-check mb-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        &nbsp;
+                        <button type="reset" class="btn btn-warning">Reset</button>
+                    </form>
+                </div>
+            </div>
+    </div>
+        <hr />
+        <div class="row">
+            <div class="myjumbotron">
+                <h1>Jumbotron Örneği</h1>
+                <p>Je T'aime..</p>
+            </div>
+            <div class="mt-4 p-5 bg-black bg-opacity-50">
+                <h1>Jumbotron Örneği</h1>
+                <p>Je T'aime..</p>
+            </div>
+        </div>
+        </div>
+</body>
+</html>
