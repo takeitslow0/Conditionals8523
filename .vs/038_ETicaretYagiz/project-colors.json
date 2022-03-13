@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1ec504c8-194f-4bc8-a91d-71f51f5b0af4": {
+      "ProjectGuid": "1ec504c8-194f-4bc8-a91d-71f51f5b0af4",
+      "DisplayName": "MvcWebUI",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery vs. JavaScript</title>
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var duzKelime = $("#testbox").val();
+            $("#test-btn").click(function (duzKelime) {
+                console.log("1");
+                var tersKelime = "";
+                for (var i = duzKelime.length - 1; i >= 0; i--) {
+                    tersKelime += duzKelime[i];
+                }
+                if (tersKelime == duzKelime) {
+                    $("#sonuc").text("kelime palindrom");
+                } else {
+                    $("#sonuc").text("Kelime Palindrom Değil!");
+                }
+            });
+        });
+       
+
+    </script>
+</head>
+<body>
+    <h1 class="title">Palindrom</h1>
+    <div class="textbox-container">
+        <input id="textbox" placeholder="Bir Kelime gir" type="text" />
+    </div>
+    <div class="btn-container">
+        <button id="test-btn">Test Et</button>
+    </div>
+    <span id="sonuc" style="text-align: center;"></span>
+</body>
+</html>

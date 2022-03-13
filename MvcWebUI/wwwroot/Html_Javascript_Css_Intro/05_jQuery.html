@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Melik Baykal</title>
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script>
+        //$(document).ready(function () {
+        //    alert("document loaded.");
+        //    console.log("documnet loaded.");
+
+        //});
+        $(function () {
+            //alert("document loaded.");
+            console.log("documnet loaded.");
+            $("button").click(function () {
+                $("p").hide();
+                //$("p").show(); //gizlediğin elemanı gösterir
+            });
+
+            $("#showbutton").click(function () {
+                //$("p").hide();
+                $("p").show();
+            });
+
+            $("#myaid").click(function (event) {
+                event.preventDefault();
+                $("#mylabelid").toggle(1000);
+                //$("mylabelid").toggle("slow");
+                //$("mylabelid").toggle("fast");
+            });
+            $("#bSave").on("click", function () {
+                var adi = $("#tbAdi").val(); // value yerine val kullanılır jQueryde.
+                var soyadi = $("#tbSoyadi").val();
+                var no = $("#tbNo").val();
+                var saveResult = $("#lSaveResult");
+                //if (adi.trim() == "" || soyadi.trim() == "" || no.trim == "") {
+                //    saveResult.text("Öğrenci adı, soyadı ve numarası Boş OLAMAZ ASLAN PARÇASI!");
+                //}
+                //else {
+                //    saveResult.text("Adı: " + adi.trim() + ", Soyadı: " + soyadi.trim() + ", numarası: " + no.trim() + " olan öğrenci başarıyla kaydedildi BİLADER !")
+                //}
+                var emptyFound = false; //flag
+                $(".ogrenci").each(function () {
+                    if ($(this).val().trim() == "") {
+                        emptyFound = true;
+                    }
+                });
+                if (emptyFound) {
+                    saveResult.text("Öğrenci adı, soyadı ve numarası Boş OLAMAZ ASLAN PARÇASI!");
+                    saveResult.css("color", "red");
+                }
+                else {
+                    saveResult.text("Adı: " + adi.trim() + ", Soyadı: " + soyadi.trim() + ", numarası: " + no.trim() + " olan öğrenci başarıyla kaydedildi BİLADER !")
+                    saveResult.css("color", "red").slideUp(1000).slideDown(1000);
+                }
+            });
+            /*$("#ddlSehir").val("");*/
+            $("#lDdlSehir").html('<b>Şehir Seçiniz</b>');
+            $("#ddlSehir").change(function () {
+                if ($("#ddlSehir").val() == "") {
+                    $("#lDdlSehir").html('<b>Şehir Seçiniz</b>');
+                }
+                else {
+                    $("#lDdlSehir").text("Seçili değer: " + $("#ddlSehir").val());
+                }
+            });
+            $("#cbMutlu").prop("checked", true);
+            $("#sMutlu").text(":)");
+            $("#cbMutlu").change(function () {
+                if ($("#cbMutlu").prop("checked")) {
+                    $("#sMutlu").text(":)");
+                }
+                else {
+                    $("#sMutlu").text(":(");
+                }
+            });
+            $("#rAdn").prop("checked", true);
+            $("#rTr").prop("checked", false);
+            $("#rUs").prop("checked", false);
+            $("#rCdn").prop("checked", false);
+
+            $("input[name=ulkeler]").off("click");
+            $("input[name=ulkeler]").on("click", function () {
+                $("#ulke").text($("input[name=ulkeler]:checked").val());
+            });
+            $("#bSehirler").click(function () {
+                var sehirler = sehirleriGetir();
+                $("#sSehirler").text(sehirler);
+            });
+        });
+        function sehirleriGetir() {
+            var sehirler = "";
+            var seciliSehirler = $("#lbSehirler").val();
+            /*seciliSehirler.blink("#sSehirler");*/
+            if (seciliSehirler.length > 0) {
+                var i = 0;
+                while (i < seciliSehirler.length) {
+
+                    sehirler += seciliSehirler[i] + ", ";
+                    i++;
+                }
+                sehirler = sehirler.substr(0, sehirler.length - 2) // 06, 01,
+            }
+            return sehirler;
+        }
+    </script>
+</head>
+<body>
+    <p>jQuery</p>
+    <button>Hide jQuery</button>
+    <button id="showbutton">Show jQuery</button>
+    <hr />
+    <label id="mylabelid">Melik canavar bütün konuları çalışmıi</label>
+    <br />
+    <a id="myaid" href="#">Yukarıdaki yazıyı göster / gizle</a>
+    <table style="border-style: solid; border-width: 1px;">
+        <tr>
+            <td>
+                Öğrenci Adı
+            </td>
+            <td>
+                <input type="text" id="tbAdi" class="ogrenci" width="250" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Öğrenci Soyadı
+            </td>
+            <td>
+                <input type="text" id="tbSoyadi" class="ogrenci" width="250" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Öğrenci No
+            </td>
+            <td>
+                <input type="text" id="tbNo" class="ogrenci" width="250" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" id="bSave" value="Kaydet" />
+            </td>
+        </tr>
+        <tr>
+            <td coldspan="2">
+                <label id="lSaveResult"></label>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <select id="ddlSehir">
+        <option value="">-- Seçiniz --</option>
+        <option value="01">Adana</option>
+        <option value="06">Ankara</option>
+        <option value="33">Mersin</option>
+    </select>
+    <br />
+    <label id="lDdlSehir"></label>
+    <hr />
+    <input type="checkbox" id="cbMutlu" />&nbsp;Mutlu Musun?
+    <hr />
+    <span id="sMutlu"></span>
+    <hr />
+    <input type="radio" name="ulkeler" value="tr" id="rTr" /> Türkiye
+    <input type="radio" name="ulkeler" value="us" id="rUs" /> ABD
+    <input type="radio" name="ulkeler" value="cnd" id="rCnd" /> Canada
+    <input type="radio" name="ulkeler" value="01" id="rAdn" /> ADANA ! !! !
+    <br />
+    <span id="ulke"></span>
+    <br />
+    <select multiple id="lbSehirler">
+        <option value="01">Adana</option>
+        <option value="06">Ankara</option>
+        <option value="34">İstabul</option>
+    </select>
+    <hr />
+    <input type="button" id="bSehirler" value="Seçili Şehirleri Getir" />
+    <hr />
+    <span id="sSehirler"></span>
+    <hr />
+    <script src="05_BasicjQuery.js"></script>
+    <input type="text" id="tbInput1" placeholder="Enter a text to set below..." />
+    <br />
+    <input type="button" id="bSetText" value="Set Text" />&nbsp;
+    <input type="button" id="bsetHtml" value="Set HTML" />&nbsp;
+    <input type="button" id="bSetValue" value="Set Value" />
+    <hr />
+    <span id="sOutput1"></span>
+    <br />
+    <span id="sOutput2"></span>
+    <br />
+    <input type="text" id="tbOutput1" />
+</body>
+</html>
